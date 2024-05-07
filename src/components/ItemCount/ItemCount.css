@@ -1,0 +1,36 @@
+.counter{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 120px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.235);
+}
+
+.counter button{
+    font-size: x-large;
+    color: #008DDA;
+    margin: 2px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.counter button:disabled{
+    color: #008eda78;
+}
+.itemcount_container{
+    /* background-color: rgb(128, 128, 128); */
+    /* width: 400px;
+    height: 300px; */
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+
+}

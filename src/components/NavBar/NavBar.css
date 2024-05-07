@@ -1,0 +1,9 @@
+.navbar_wrapper{
+    height: 100%;
+    width: 120vh;
+    margin-right: 40px;
+    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}

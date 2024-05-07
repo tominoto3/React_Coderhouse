@@ -1,0 +1,22 @@
+
+.categorylist{
+    display: flex;
+    list-style: none;
+    /* gap: 30px; */
+    padding: 70px 100px 30px 0px;
+}
+
+.categorylist a{
+    padding: 0px 15px;
+}
+
+.categorylist a:hover{
+    border-bottom:solid black 1px;
+    font-weight: bold;
+    
+}
+.active-link{
+    border-bottom:solid black 1px;
+    /* text-decoration: underline; */
+    font-weight: bolder;
+}
