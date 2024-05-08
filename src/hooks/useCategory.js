@@ -10,7 +10,7 @@ export default function useCategory(category){
         getProductsByCategory(category)
             .then((data) => setProducts(data))
             .finally(()=> setIsLoading(false));
-    }, []);
+    }, [category]);
     
     return {products, isLoading};
     

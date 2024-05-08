@@ -33,7 +33,7 @@ function CategoryList (){
         <nav>
             <ul className="categorylist">
                 {mis_rutas.map((ruta) => (
-                    <li>
+                    <li key={ruta.path}>
                         
                         <NavLink
                         className={({isActive}) => (isActive ? "active-link" : "")}  to={ruta.path}

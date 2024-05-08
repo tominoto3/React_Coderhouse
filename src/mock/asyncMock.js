@@ -87,6 +87,6 @@ export const getProductsByCategory = (category) => {
         setTimeout(() => {
             resolve (products.filter((product) => product.category === category ) );
             
-        }, 2000)
+        }, )
     });
 }

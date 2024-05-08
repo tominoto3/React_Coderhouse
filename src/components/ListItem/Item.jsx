@@ -1,13 +1,12 @@
-import { Link, NavLink } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 import './Item.css'
 
 export default function Item({ item }) {
     
-    const onAdd = (nombreDeItem, cantidadLlevar) => {
+    /* const onAdd = (nombreDeItem, cantidadLlevar) => {
         console.log("NombreDelItem: ", nombreDeItem);
         console.log("CantidadaLlevar:",cantidadLlevar);
-    }
+    } */
 
 
     return(
