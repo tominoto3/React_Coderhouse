@@ -1,6 +1,10 @@
 
+.Items-container{
+    align-items: center;
+}
 
-/* Contenedor de todos los items */
+
+/* Contenedor de cada items */
 .Item-list-container {
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +23,8 @@
     padding: 10px;
     margin: 10px;
     width: 250px;
+
+    box-shadow: rgba(0, 0, 0, 0.308) 5px 5px 5px;
 }
 
 
@@ -69,7 +75,7 @@
 }
 
 .addcart-button {
-
+    
     color: #008DDA;
     padding: 10px 15px;
     border-color: #008DDA;

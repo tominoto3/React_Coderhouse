@@ -1,0 +1,21 @@
+.add-cantidad {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+.add-cantidad-button{
+    border: 1px solid rgba(0, 0, 0, 0.551) ;
+    /* margin: 10px; */
+    height: 30px;
+    width: 30px;
+}
+.add-cantidad-button:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.right{
+    border-radius: 0 10px 10px 0;
+}
+.left{
+    border-radius: 10px 0px 0px 10px;
+}

@@ -11,5 +11,10 @@ export default function useCount (initialValue = 0) {
     const decrementar =()=>{
         setCount(counter-1);
     }
-    return { counter, incrementar,decrementar};
+    
+    const reset = () => {
+        setCount(initialValue);
+    }
+
+    return { counter, incrementar,decrementar, reset};
 }

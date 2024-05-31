@@ -74,13 +74,13 @@ export const getProducts = () => {
     });
 }
 
-export const getProductById = (id) => {
+/* export const getProductById = (id) => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve (products.find((product) => product.id === id));
         }, 2000)
     });
-}
+} */
 
 export const getProductsByCategory = (category) => {
     return new Promise((resolve) => {

@@ -1,4 +1,5 @@
 
+
 import useProduct from "../../hooks/useProduct";
 import ItemDetailList from "./ItemDetailList";
 import { useParams } from "react-router-dom";
@@ -6,14 +7,14 @@ import { useParams } from "react-router-dom";
 
 function ItemDetailContainer(){
     const {ItemId} = useParams ();
-    const {product, isLoading : product2loading} = useProduct (Number(ItemId));
-    
+    const {product, isLoading : product2loading} = useProduct(ItemId);
+        
     if(product2loading) return <h1>Cargando...</h1>;
 
-    return (
 
+    return (
         <div>
-            <ItemDetailList product={product} />
+            <ItemDetailList product={product}/>
         </div>
 
     )

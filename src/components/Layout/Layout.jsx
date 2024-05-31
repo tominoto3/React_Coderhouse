@@ -11,8 +11,9 @@ function Layout({ children }){
                 <Brand/>
                 <Navbar/>
             </div>
-            
+            <div className="main">
             <main className="main-container"> {children}</main>
+            </div>
             {/* <Footer/> */}
         </div>
     )

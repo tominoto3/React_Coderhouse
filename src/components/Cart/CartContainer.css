@@ -1,0 +1,35 @@
+.cart-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.Cart-items-container{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    
+}
+.cart-container h2{
+    text-decoration: underline;
+}
+.cart-Button-container{
+    margin:  20px ;
+    display: flex;
+    align-items: center;
+    
+}
+.Clear-cart-Button{
+    border: none;
+    height: 30px;
+    width: 110px;
+}
+.link-container{
+    display: flex;
+    
+    align-items: center;
+}
+
+.link-terminarcompra:hover{
+    text-decoration: underline;
+}

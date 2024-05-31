@@ -11,6 +11,8 @@
 }
 
 .counter button{
+    justify-content: center;
+    align-items: center;
     font-size: x-large;
     color: #008DDA;
     margin: 2px;
@@ -24,6 +26,8 @@
 
 .counter button:disabled{
     color: #008eda78;
+    align-items: center;
+    justify-content: center;
 }
 .itemcount_container{
     /* background-color: rgb(128, 128, 128); */

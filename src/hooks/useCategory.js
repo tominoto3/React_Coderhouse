@@ -1,17 +1,35 @@
+
 import { useEffect, useState } from "react";
-import { getProductsByCategory } from "../mock/asyncMock";
+import { collection, getDocs, getFirestore, query, where } from "firebase/firestore";
+
 
 export default function useCategory(category){
-    const [products, setProducts] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
+const [products,setProducts] = useState([]);
+const [isLoading, setIsLoading] = useState(true);
 
+    
+    useEffect(() => {
+        const db = getFirestore();
 
-    useEffect (() => {
-        getProductsByCategory(category)
-            .then((data) => setProducts(data))
-            .finally(()=> setIsLoading(false));
-    }, [category]);
+        const productsCollection = collection(db, "products");
+        
+        const q = query (productsCollection, where("categoryId", "==", category))
+
+        getDocs(q)
+            .then((snapshot) => {
+            setProducts(snapshot.docs.map((doc) => {
+                return { ...doc.data(), id: doc.id }
+            }
+            ));
+        })
+        .finally(() => { 
+            setIsLoading(false);
+        });
+    },[category]);
     
-    return {products, isLoading};
-    
+
+    return {
+        products,
+        isLoading
+    };
 }
